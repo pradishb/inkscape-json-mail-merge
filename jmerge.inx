@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Jmerge</_name>
+  <id>org.inkscape.effect.radiobuttontest</id>
+  <param name="Json File Path" type="string">heloo my friend</param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu _name="Developer Examples"/>
+    </effects-menu>
+  </effect>
+</inkscape-extension>
