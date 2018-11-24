@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="338.69614"
-     inkscape:cy="396.29509"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="249.96835"
+     inkscape:cy="418.30118"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,50 +56,59 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:Oswald;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="12.473214"
-       y="118.21726"
-       id="text2980"><tspan
+       x="10.690782"
+       y="110.44587"
+       id="text828"><tspan
          sodipodi:role="line"
-         id="tspan2978"
-         x="12.473214"
-         y="118.21726"
-         style="stroke-width:0.26458332">{% parse(json.id) %}</tspan></text>
+         x="10.690782"
+         y="110.44587"
+         style="stroke-width:0.26458332"
+         id="tspan838">{{#repo}}</tspan><tspan
+         sodipodi:role="line"
+         x="10.690782"
+         y="123.67503"
+         style="stroke-width:0.26458332"
+         id="tspan854">{{name}}</tspan><tspan
+         sodipodi:role="line"
+         x="10.690782"
+         y="136.90421"
+         style="stroke-width:0.26458332"
+         id="tspan856">{{/repo}}</tspan></text>
     <text
-       id="text2984"
-       y="118.21726"
-       x="195.79164"
+       id="text835"
+       y="112.58402"
+       x="199.9176"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:Oswald;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="stroke-width:0.26458332"
-         y="118.21726"
-         x="195.79164"
-         id="tspan2982"
-         sodipodi:role="line">{% parse(json.date) %}</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:Oswald;-inkscape-font-specification:Oswald;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="14.36308"
-       y="188.52084"
-       id="text2988"><tspan
-         sodipodi:role="line"
-         id="tspan2986"
-         x="14.36308"
-         y="188.52084"
-         style="stroke-width:0.26458332">{%</tspan><tspan
-         sodipodi:role="line"
-         x="14.36308"
-         y="201.75002"
+         y="112.58402"
+         x="199.9176"
+         id="tspan822"
+         sodipodi:role="line">asdf</tspan><tspan
+         id="tspan824"
          style="stroke-width:0.26458332"
-         id="tspan2990">for item in json.items</tspan><tspan
-         sodipodi:role="line"
-         x="14.36308"
-         y="214.97917"
+         y="125.81319"
+         x="199.9176"
+         sodipodi:role="line">adsf</tspan><tspan
+         id="tspan827"
          style="stroke-width:0.26458332"
-         id="tspan2994">  parse(item + &quot;:&quot; + json.items[item])</tspan><tspan
-         sodipodi:role="line"
-         x="14.36308"
-         y="228.20834"
+         y="139.04236"
+         x="199.9176"
+         sodipodi:role="line">asdf</tspan><tspan
+         id="tspan829"
          style="stroke-width:0.26458332"
-         id="tspan2992">%}</tspan></text>
+         y="152.27151"
+         x="199.9176"
+         sodipodi:role="line">asdf</tspan><tspan
+         id="tspan831"
+         style="stroke-width:0.26458332"
+         y="165.50069"
+         x="199.9176"
+         sodipodi:role="line">asdf</tspan><tspan
+         id="tspan833"
+         style="stroke-width:0.26458332"
+         y="178.72986"
+         x="199.9176"
+         sodipodi:role="line">asdf</tspan></text>
   </g>
 </svg>

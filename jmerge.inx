@@ -2,6 +2,7 @@
 <inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
   <_name>Jmerge</_name>
   <id>org.inkscape.effect.radiobuttontest</id>
+  <dependency type="executable" location="extensions">jmerge.py</dependency>
   <param name="Json File Path" type="string">heloo my friend</param>
   <effect>
     <object-type>all</object-type>
@@ -9,4 +10,8 @@
       <submenu _name="Developer Examples"/>
     </effects-menu>
   </effect>
-</inkscape-extension>
+  <!-- py file again -->
+	<script>
+		<command reldir="extensions" interpreter="python">jmerge.py</command>
+</script>
+</inkscape-extension> 
