@@ -7,6 +7,7 @@ import inkex
 import sys
 import pystache
 import string
+import json
 sys.path.append('/usr/share/inkscape/extensions')
 
 # We will use the inkex module with the predefined Effect base class.
@@ -17,12 +18,14 @@ class HelloWorldEffect(inkex.Effect):
     def __init__(self):
         inkex.Effect.__init__(self)
 
-        self.OptionParser.add_option('-w', '--what', action='store',
-                                     type='string', dest='what', default='World',
-                                     help='What would you like to greet?')
+        self.OptionParser.add_option('-j', '--json', action='store',
+                                     type='string', dest='json', default='default.json',
+                                     help='Json file to template')
 
     def effect(self):
-        what = self.options.what
+        json_path = self.options.json
+        json_file = open(json_path, "r")
+        json_data = json.loads(json_file.read())
 
         svg = self.document.getroot()
         textElements = self.document.xpath(
@@ -37,21 +40,12 @@ class HelloWorldEffect(inkex.Effect):
             y = inkex.unittouu(e.get('y'))
 
             old_text = string.join(e.xpath(".//text()"), "\n")
-            print(old_text)
             for tspan in e.getchildren():
                 e.remove(tspan)
-
-            json_data = {"repo": [
-                {"name": "resque"},
-                {"name": "hub"},
-                {"name": "rip"}
-            ]
-            }
 
             new_text = pystache.render(old_text, json_data)
 
             lines = new_text.split("\n")
-            print(lines)
 
             for line in lines:
                 tspan = inkex.etree.Element(inkex.addNS('tspan', 'svg'), attrib={

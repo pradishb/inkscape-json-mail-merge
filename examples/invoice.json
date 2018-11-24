@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "description": "Logo Design Service",
+      "unit": 1,
+      "rate": 300,
+      "amount": 300
+    },
+    {
+      "description": "Business Card Design",
+      "unit": 1,
+      "rate": 200,
+      "amount": 200
+    }
+  ],
+  "customer_info": {
+    "name": "Pradish Bijukchhe",
+    "street_address": "Bhairab Tole",
+    "city": "Pokhara",
+    "zip": 33700,
+    "state": "Kaski"
+  },
+  "invoice_info": {
+    "id": 135,
+    "date": "08/01/2018",
+    "sub_total": 500,
+    "tax": 0,
+    "status": "Paid",
+    "payment_method": "Paypal"
+  }
+}
